@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+}
+.card-right {
+  width: 20pc;
+  background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.3rem;
+  gap: 20px;
+}
+.card-right .header p {
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+}
+.card-right .circle {
+  width: 10pc;
+  height: 10pc;
+  background-image: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-right .circle h1 {
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+.card-right .circle p {
+  font-size: 18px;
+  color: hsl(241, 100%, 89%);
+}
+.card-right .text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-right .text h1 {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+.card-right .text p {
+  text-align: center;
+  padding: 10px 18px;
+  color: hsl(241, 100%, 89%);
+  font-weight: lighter;
+}
+.card-left {
+  width: 20pc;
+  padding: 1rem 2rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 20px 20px 30px rgba(200, 199, 255, 0.5);
+}
+.card-left .head h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+.card-left .body {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-left .body .list {
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-left .body .list.e {
+  background-color: rgba(255, 87, 87, 0.1);
+}
+.card-left .body .list.e .text {
+  color: hsl(0, 100%, 67%);
+}
+.card-left .body .list.w {
+  background-color: rgba(255, 176, 31, 0.1);
+}
+.card-left .body .list.w .text {
+  color: hsl(39, 100%, 56%);
+}
+.card-left .body .list.g {
+  background-color: rgba(0, 189, 145, 0.1);
+}
+.card-left .body .list.g .text {
+  color: hsl(166, 100%, 37%);
+}
+.card-left .body .list.p {
+  background-color: rgba(17, 37, 212, 0.1);
+}
+.card-left .body .list.p .text {
+  color: hsl(234, 85%, 45%);
+}
+.card-left .body .list .d {
+  display: flex;
+  gap: 10px;
+}
+.card-left .body .list .score p {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+.card-left .body .list .score p span {
+  color: rgba(48, 59, 90, 0.5);
+}
+.card-left .btn {
+  display: flex;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+}
+.card-left .btn button {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  cursor: pointer;
+}
+.card-left .btn button:hover {
+  background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+@media (max-width: 375px) {
+  .card {
+    flex-direction: column;
+  }
+  .card-right {
+    width: 100%;
+    height: 50vh;
+  }
+  .card-left {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
